@@ -9,20 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isMenu: Bool = true
-    var meats: [String] = ["Beuf", "Poulet", "Poisson", "Veggie"]
+    var meats: [String] = ["Boeuf", "Poulet", "Poisson", "Veggie"]
     @State var selectedMeat: Int = 0
+    @State var cornichons: Int = 0
+    @State var bacon: Int = 0
     
     
     var body: some View {
         Form {
             Section("Composez votre Commande") {
                 ToggleMenu(isMenu: $isMenu)
-                HStack {
-                    Spacer()
-                    Image(meats[selectedMeat])
-                    Spacer()
-                }
+                MeatImage(name: meats[selectedMeat])
                 PickerMeat(meats: meats, selectionMeat: $selectedMeat)
+                StepperCondiments(value: $bacon, image: "bacon")
+                StepperCondiments(value: $cornichons, image: "gherkin")
             }
         }
     }

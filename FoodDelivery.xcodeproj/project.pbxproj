@@ -13,6 +13,8 @@
 		2F19A91028BFCE3A003F4144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F19A90F28BFCE3A003F4144 /* Preview Assets.xcassets */; };
 		2F19A91728BFCEE3003F4144 /* ToggleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91628BFCEE3003F4144 /* ToggleMenu.swift */; };
 		2F19A91928BFCF8E003F4144 /* PickerMeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91828BFCF8E003F4144 /* PickerMeat.swift */; };
+		2F19A91B28BFD129003F4144 /* MeatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91A28BFD129003F4144 /* MeatImage.swift */; };
+		2F19A91D28BFD179003F4144 /* StepperCondiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91C28BFD179003F4144 /* StepperCondiments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2F19A90F28BFCE3A003F4144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F19A91628BFCEE3003F4144 /* ToggleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleMenu.swift; sourceTree = "<group>"; };
 		2F19A91828BFCF8E003F4144 /* PickerMeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMeat.swift; sourceTree = "<group>"; };
+		2F19A91A28BFD129003F4144 /* MeatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatImage.swift; sourceTree = "<group>"; };
+		2F19A91C28BFD179003F4144 /* StepperCondiments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCondiments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				2F19A90E28BFCE3A003F4144 /* Preview Content */,
 				2F19A91628BFCEE3003F4144 /* ToggleMenu.swift */,
 				2F19A91828BFCF8E003F4144 /* PickerMeat.swift */,
+				2F19A91A28BFD129003F4144 /* MeatImage.swift */,
+				2F19A91C28BFD179003F4144 /* StepperCondiments.swift */,
 			);
 			path = FoodDelivery;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 				2F19A91928BFCF8E003F4144 /* PickerMeat.swift in Sources */,
 				2F19A90B28BFCE37003F4144 /* ContentView.swift in Sources */,
 				2F19A91728BFCEE3003F4144 /* ToggleMenu.swift in Sources */,
+				2F19A91B28BFD129003F4144 /* MeatImage.swift in Sources */,
 				2F19A90928BFCE37003F4144 /* FoodDeliveryApp.swift in Sources */,
+				2F19A91D28BFD179003F4144 /* StepperCondiments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
