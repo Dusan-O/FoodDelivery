@@ -13,6 +13,8 @@ struct ContentView: View {
     @State var selectedMeat: Int = 0
     @State var cornichons: Int = 0
     @State var bacon: Int = 0
+    @State var ketchup = false
+    @State var mayo = false
     
     
     var body: some View {
@@ -23,6 +25,9 @@ struct ContentView: View {
                 PickerMeat(meats: meats, selectionMeat: $selectedMeat)
                 StepperCondiments(value: $bacon, image: "bacon")
                 StepperCondiments(value: $cornichons, image: "gherkin")
+                ToggleSaucages(image: "ketchup", saucages: $ketchup)
+                ToggleSaucages(image: "mustard", saucages: $mayo)
+
             }
         }
     }
