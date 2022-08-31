@@ -16,6 +16,8 @@
 		2F19A91B28BFD129003F4144 /* MeatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91A28BFD129003F4144 /* MeatImage.swift */; };
 		2F19A91D28BFD179003F4144 /* StepperCondiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91C28BFD179003F4144 /* StepperCondiments.swift */; };
 		2F19A91F28BFD279003F4144 /* ToggleSaucages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A91E28BFD279003F4144 /* ToggleSaucages.swift */; };
+		2F19A92128BFD3F9003F4144 /* PickerDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A92028BFD3F9003F4144 /* PickerDrink.swift */; };
+		2F19A92328BFD4C0003F4144 /* ToggleFries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A92228BFD4C0003F4144 /* ToggleFries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		2F19A91A28BFD129003F4144 /* MeatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatImage.swift; sourceTree = "<group>"; };
 		2F19A91C28BFD179003F4144 /* StepperCondiments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCondiments.swift; sourceTree = "<group>"; };
 		2F19A91E28BFD279003F4144 /* ToggleSaucages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSaucages.swift; sourceTree = "<group>"; };
+		2F19A92028BFD3F9003F4144 /* PickerDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDrink.swift; sourceTree = "<group>"; };
+		2F19A92228BFD4C0003F4144 /* ToggleFries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				2F19A91A28BFD129003F4144 /* MeatImage.swift */,
 				2F19A91C28BFD179003F4144 /* StepperCondiments.swift */,
 				2F19A91E28BFD279003F4144 /* ToggleSaucages.swift */,
+				2F19A92028BFD3F9003F4144 /* PickerDrink.swift */,
+				2F19A92228BFD4C0003F4144 /* ToggleFries.swift */,
 			);
 			path = FoodDelivery;
 			sourceTree = "<group>";
@@ -154,9 +160,11 @@
 			files = (
 				2F19A91F28BFD279003F4144 /* ToggleSaucages.swift in Sources */,
 				2F19A91928BFCF8E003F4144 /* PickerMeat.swift in Sources */,
+				2F19A92128BFD3F9003F4144 /* PickerDrink.swift in Sources */,
 				2F19A90B28BFCE37003F4144 /* ContentView.swift in Sources */,
 				2F19A91728BFCEE3003F4144 /* ToggleMenu.swift in Sources */,
 				2F19A91B28BFD129003F4144 /* MeatImage.swift in Sources */,
+				2F19A92328BFD4C0003F4144 /* ToggleFries.swift in Sources */,
 				2F19A90928BFCE37003F4144 /* FoodDeliveryApp.swift in Sources */,
 				2F19A91D28BFD179003F4144 /* StepperCondiments.swift in Sources */,
 			);

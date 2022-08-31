@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State var isMenu: Bool = true
     var meats: [String] = ["Boeuf", "Poulet", "Poisson", "Veggie"]
+    var drinks = ["Soda", "Orange", "Citron", "Ice Tea", "Eau"]
+    @State var selecteddrink = 0
     @State var selectedMeat: Int = 0
     @State var cornichons: Int = 0
     @State var bacon: Int = 0
     @State var ketchup = false
-    @State var mayo = false
+    @State var mustard = false
     
     
     var body: some View {
@@ -26,8 +28,13 @@ struct ContentView: View {
                 StepperCondiments(value: $bacon, image: "bacon")
                 StepperCondiments(value: $cornichons, image: "gherkin")
                 ToggleSaucages(image: "ketchup", saucages: $ketchup)
-                ToggleSaucages(image: "mustard", saucages: $mayo)
+                ToggleSaucages(image: "mustard", saucages: $mustard)
 
+            }
+            if isMenu {
+                Section("Pour le menu") {
+                    PickerDrink(selected: $selecteddrink, drinks: drinks)
+                }
             }
         }
     }
