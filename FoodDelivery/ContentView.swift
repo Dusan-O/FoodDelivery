@@ -20,6 +20,8 @@ struct ContentView: View {
     @State var big = false
     @State var texte = ""
     @State var number = ""
+    @State var date = Date()
+    @State var cheese: Double = 50
     
     
     var body: some View {
@@ -32,7 +34,7 @@ struct ContentView: View {
                 StepperCondiments(value: $cornichons, image: "gherkin")
                 ToggleSaucages(image: "ketchup", saucages: $ketchup)
                 ToggleSaucages(image: "mustard", saucages: $mustard)
-
+                SliderCheese(cheese: $cheese)
             }
             if isMenu {
                 Section("Pour le menu") {
@@ -46,7 +48,7 @@ struct ContentView: View {
                 #if os(iOS)
                     .keyboardType(.phonePad)
                 #endif
-                
+                DatePicker("Heure", selection: $date, displayedComponents: .hourAndMinute)
                 
             }
         }
