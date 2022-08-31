@@ -22,6 +22,8 @@ struct ContentView: View {
     @State var number = ""
     @State var date = Date()
     @State var cheese: Double = 50
+    @State var recap = ""
+    @FocusState var focus
     
     
     var body: some View {
@@ -44,14 +46,54 @@ struct ContentView: View {
             }
             Section("Informations") {
                 TextField("Nom de la commande", text: $texte)
-                TextField("Numéro", text: $number)
-                #if os(iOS)
-                    .keyboardType(.phonePad)
-                #endif
+                HStack {
+                    TextField("Numéro", text: $number)
+                        .focused($focus)
+                    #if os(iOS)
+                        .keyboardType(.phonePad)
+                    #endif
+                    Button("Ok") {
+                        focus = false
+                }
+            }
                 DatePicker("Heure", selection: $date, displayedComponents: .hourAndMinute)
-                
+            }
+            Section("Récapitulatif") {
+                Button("Je Commande") {
+                    var commande = ""
+                    commande += texte + " a commandé pour \(dateConverter())\n"
+                    commande += isMenu ? "Menu" : "Burger simple"
+                    commande += " \(meats[selectedMeat]) avec \(bacon) tranches de bacon et \(cornichons) tranches de cornichons.\n"
+                    commande += "\(Int(cheese)) % de fromage\n"
+                    if ketchup {
+                        commande += "Avec Ketchup.\n"
+                    }
+                    if mustard {
+                        commande += "Avec Moutarde.\n"
+                    }
+                    if isMenu {
+                        commande += "Boissons: \(drinks[selecteddrink]).\n"
+                        commande += big ? "Grande frite" : "Petite frite.\n"
+                    }
+                    if let phone = Int(number) {
+                        commande += "Nous vous appellerons à ce numéro: \(phone)"
+                    }
+                    recap = commande
+                    print(recap)
+                }
+                Text(recap)
+                    .frame(height: 200)
             }
         }
+    }
+    
+    func dateConverter() -> String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .medium
+        formatter.locale = Locale(identifier: "fr-FR")
+        let str = formatter.string(from: date)
+        return str
     }
 }
 
