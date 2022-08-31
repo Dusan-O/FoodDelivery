@@ -10,7 +10,12 @@ import SwiftUI
 struct ToggleFries: View {
     @Binding var isBig: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image("fries")
+                .resizable()
+                .frame(width: 30, height: 30)
+            Toggle(isBig ? "Grande" : "Petite", isOn: $isBig)
+        }
     }
 }
 
